@@ -17,7 +17,7 @@ class PeopleControllerTest < ActionDispatch::IntegrationTest
 
   test "should create person" do
     assert_difference('Person.count') do
-      post people_url, params: { person: { UserAccounts: @person.UserAccounts, access_granted_date: @person.access_granted_date, access_suspended_date: @person.access_suspended_date, department_id: @person.department_id, eamil_address: @person.eamil_address, first_name: @person.first_name, gecos: @person.gecos, home_dir: @person.home_dir, last_name: @person.last_name, middle_initial: @person.middle_initial, password: @person.password, phone_number: @person.phone_number, role: @person.role, suffix: @person.suffix, user_id: @person.user_id } }
+      post people_url, params: { person: { department_id: @person.department_id, eamil_address: @person.eamil_address, first_name: @person.first_name, last_name: @person.last_name, middle_initial: @person.middle_initial, phone_number: @person.phone_number, role: @person.role, suffix: @person.suffix } }
     end
 
     assert_redirected_to person_url(Person.last)
@@ -34,7 +34,7 @@ class PeopleControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update person" do
-    patch person_url(@person), params: { person: { UserAccounts: @person.UserAccounts, access_granted_date: @person.access_granted_date, access_suspended_date: @person.access_suspended_date, department_id: @person.department_id, eamil_address: @person.eamil_address, first_name: @person.first_name, gecos: @person.gecos, home_dir: @person.home_dir, last_name: @person.last_name, middle_initial: @person.middle_initial, password: @person.password, phone_number: @person.phone_number, role: @person.role, suffix: @person.suffix, user_id: @person.user_id } }
+    patch person_url(@person), params: { person: { department_id: @person.department_id, eamil_address: @person.eamil_address, first_name: @person.first_name, last_name: @person.last_name, middle_initial: @person.middle_initial, phone_number: @person.phone_number, role: @person.role, suffix: @person.suffix } }
     assert_redirected_to person_url(@person)
   end
 

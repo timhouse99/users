@@ -9,13 +9,6 @@ one:
   role: MyString
   phone_number: MyString
   eamil_address: MyString
-  UserAccounts: MyString
-  user_id: MyString
-  gecos: MyString
-  home_dir: MyString
-  password: MyString
-  access_granted_date: MyString
-  access_suspended_date: MyString
 
 two:
   first_name: MyString
@@ -26,10 +19,3 @@ two:
   role: MyString
   phone_number: MyString
   eamil_address: MyString
-  UserAccounts: MyString
-  user_id: MyString
-  gecos: MyString
-  home_dir: MyString
-  password: MyString
-  access_granted_date: MyString
-  access_suspended_date: MyString

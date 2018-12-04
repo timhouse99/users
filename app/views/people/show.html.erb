@@ -40,40 +40,5 @@
   <%= @person.eamil_address %>
 </p>
 
-<p>
-  <strong>Useraccounts:</strong>
-  <%= @person.UserAccounts %>
-</p>
-
-<p>
-  <strong>User:</strong>
-  <%= @person.user_id %>
-</p>
-
-<p>
-  <strong>Gecos:</strong>
-  <%= @person.gecos %>
-</p>
-
-<p>
-  <strong>Home dir:</strong>
-  <%= @person.home_dir %>
-</p>
-
-<p>
-  <strong>Password:</strong>
-  <%= @person.password %>
-</p>
-
-<p>
-  <strong>Access granted date:</strong>
-  <%= @person.access_granted_date %>
-</p>
-
-<p>
-  <strong>Access suspended date:</strong>
-  <%= @person.access_suspended_date %>
-</p>
-
 <%= link_to 'Edit', edit_person_path(@person) %> |
 <%= link_to 'Back', people_path %>
