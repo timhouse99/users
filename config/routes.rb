@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :user_accounts_groups
+  resources :user_accounts_people
   resources :groups
   resources :user_accounts
   resources :people

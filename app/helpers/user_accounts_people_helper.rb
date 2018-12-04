@@ -1,0 +1,2 @@
+module UserAccountsPeopleHelper
+end

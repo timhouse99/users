@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>User Accounts Groups</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Account</th>
+      <th>Group</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @user_accounts_groups.each do |user_accounts_group| %>
+      <tr>
+        <td><%= user_accounts_group.account_id %></td>
+        <td><%= user_accounts_group.group_id %></td>
+        <td><%= link_to 'Show', user_accounts_group %></td>
+        <td><%= link_to 'Edit', edit_user_accounts_group_path(user_accounts_group) %></td>
+        <td><%= link_to 'Destroy', user_accounts_group, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New User Accounts Group', new_user_accounts_group_path %>
