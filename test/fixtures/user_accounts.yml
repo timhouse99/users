@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: MyString
+  gecos: MyString
+  home_dir: MyString
+  password: MyString
+  access_granted_date: MyString
+  access_suspended_date: MyString
+
+two:
+  user_id: MyString
+  gecos: MyString
+  home_dir: MyString
+  password: MyString
+  access_granted_date: MyString
+  access_suspended_date: MyString

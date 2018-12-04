@@ -1,0 +1,79 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @person.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @person.last_name %>
+</p>
+
+<p>
+  <strong>Middle initial:</strong>
+  <%= @person.middle_initial %>
+</p>
+
+<p>
+  <strong>Suffix:</strong>
+  <%= @person.suffix %>
+</p>
+
+<p>
+  <strong>Department:</strong>
+  <%= @person.department_id %>
+</p>
+
+<p>
+  <strong>Role:</strong>
+  <%= @person.role %>
+</p>
+
+<p>
+  <strong>Phone number:</strong>
+  <%= @person.phone_number %>
+</p>
+
+<p>
+  <strong>Eamil address:</strong>
+  <%= @person.eamil_address %>
+</p>
+
+<p>
+  <strong>Useraccounts:</strong>
+  <%= @person.UserAccounts %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @person.user_id %>
+</p>
+
+<p>
+  <strong>Gecos:</strong>
+  <%= @person.gecos %>
+</p>
+
+<p>
+  <strong>Home dir:</strong>
+  <%= @person.home_dir %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @person.password %>
+</p>
+
+<p>
+  <strong>Access granted date:</strong>
+  <%= @person.access_granted_date %>
+</p>
+
+<p>
+  <strong>Access suspended date:</strong>
+  <%= @person.access_suspended_date %>
+</p>
+
+<%= link_to 'Edit', edit_person_path(@person) %> |
+<%= link_to 'Back', people_path %>

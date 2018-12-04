@@ -1,0 +1,92 @@
+<%= form_with(model: person, local: true) do |form| %>
+  <% if person.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(person.errors.count, "error") %> prohibited this person from being saved:</h2>
+
+      <ul>
+      <% person.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :first_name %>
+    <%= form.text_field :first_name, id: :person_first_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :last_name %>
+    <%= form.text_field :last_name, id: :person_last_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :middle_initial %>
+    <%= form.text_field :middle_initial, id: :person_middle_initial %>
+  </div>
+
+  <div class="field">
+    <%= form.label :suffix %>
+    <%= form.text_field :suffix, id: :person_suffix %>
+  </div>
+
+  <div class="field">
+    <%= form.label :department_id %>
+    <%= form.number_field :department_id, id: :person_department_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :role %>
+    <%= form.text_field :role, id: :person_role %>
+  </div>
+
+  <div class="field">
+    <%= form.label :phone_number %>
+    <%= form.text_field :phone_number, id: :person_phone_number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :eamil_address %>
+    <%= form.text_field :eamil_address, id: :person_eamil_address %>
+  </div>
+
+  <div class="field">
+    <%= form.label :UserAccounts %>
+    <%= form.text_field :UserAccounts, id: :person_UserAccounts %>
+  </div>
+
+  <div class="field">
+    <%= form.label :user_id %>
+    <%= form.text_field :user_id, id: :person_user_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :gecos %>
+    <%= form.text_field :gecos, id: :person_gecos %>
+  </div>
+
+  <div class="field">
+    <%= form.label :home_dir %>
+    <%= form.text_field :home_dir, id: :person_home_dir %>
+  </div>
+
+  <div class="field">
+    <%= form.label :password %>
+    <%= form.text_field :password, id: :person_password %>
+  </div>
+
+  <div class="field">
+    <%= form.label :access_granted_date %>
+    <%= form.text_field :access_granted_date, id: :person_access_granted_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :access_suspended_date %>
+    <%= form.text_field :access_suspended_date, id: :person_access_suspended_date %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
