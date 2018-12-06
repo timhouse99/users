@@ -1,4 +1,4 @@
 class UserAccount < ApplicationRecord
-  #has_and_belongs_to_many :groups
-  #has_and_belongs_to_many :peoples
+  belongs_to  :groups
+  belongs_to  :peoples
 end
