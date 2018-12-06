@@ -1,3 +1,3 @@
 class UserAccount < ApplicationRecord
-  belongs_to  :peoples`
+  belongs_to  :peoples
 end
