@@ -1,4 +1,3 @@
 class UserAccount < ApplicationRecord
-  belongs_to  :groups
-  belongs_to  :peoples
+  belongs_to  :peoples`
 end
